@@ -2,6 +2,10 @@ variable "humanitec_org_id" {
   description = "Humanitec Organization ID"
   type        = string
 }
+variable "apm_id" {
+  description = "Humanitec Application ID"
+  type        = strings
+}
 variable "object_prefix" {
   description = "Universal prefix for all objects to create"
   type        = string
