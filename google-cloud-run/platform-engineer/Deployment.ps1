@@ -11,3 +11,6 @@ echo $HUMANITEC_ENV
 echo $GCP_PROJECT_ID
 echo $GCP_REGION
 
+gcloud auth login --no-launch-browser
+
+gcloud auth application-default login --no-launch-browser
