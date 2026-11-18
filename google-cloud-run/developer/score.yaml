@@ -1,11 +1,13 @@
 apiVersion: score.dev/v1b1
 
 metadata:
-  name: baptisthealth-humanitec-poc-serverless-app
+  name: baptisthealth-serverless-app
 
 containers:
   main:
     image: us-docker.pkg.dev/cloudrun/container/hello
+    annotations:
+      run.googleapis.com/ingress: internal-and-cloud-load-balancing
     variables:
       DBUSER: ${resources.db.username}
       DBPASS: ${resources.db.password}

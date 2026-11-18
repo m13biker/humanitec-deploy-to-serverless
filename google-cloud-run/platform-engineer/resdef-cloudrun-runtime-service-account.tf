@@ -1,7 +1,8 @@
 # This Resource Definition provisions a GCP service account to serve as
 # the runtime service account for the Cloud Run execution
 resource "humanitec_resource_definition" "google_cloud_run_runtime_service_account" {
-  driver_type = "humanitec/opentofu-container-runner-builtin"
+  #driver_type = "humanitec/opentofu-container-runner-builtin"
+  driver_type = "humanitec/terraform-container-runner-builtin"
   id          = "${var.object_prefix}runtime-service-account"
   name        = "${var.object_prefix}runtime-service-account"
   type        = "gcp-service-account"

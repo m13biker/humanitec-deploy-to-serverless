@@ -1,5 +1,5 @@
 $env:HUMANITEC_ORG = "baptist-health"
-$env:HUMANITEC_APP = "d-cetnralized-kubernetes-apm0004223-app"
+$env:HUMANITEC_APP = "apm0004223-serverless"
 $env:HUMANITEC_ENV = "development"
 $env:GCP_PROJECT_ID = "prj-d-apm0004223-10"
 $env:GCP_REGION = "us-east1"

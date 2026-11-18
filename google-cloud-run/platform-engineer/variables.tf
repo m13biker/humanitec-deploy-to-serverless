@@ -6,6 +6,10 @@ variable "apm_id" {
   description = "Humanitec Application ID"
   type        = string
 }
+variable "cloudrun_service_name" {
+  description = "Humanitec Application ID"
+  type        = string
+}
 variable "object_prefix" {
   description = "Universal prefix for all objects to create"
   type        = string
